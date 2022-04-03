@@ -1,0 +1,52 @@
+.homePage {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+
+  .contentSection {
+    display: flex;
+    position: relative;
+    margin-top: 60px;
+    padding: 16px;
+    width: 100%;
+    height: calc(100% - 60px);
+    box-sizing: border-box;
+  }
+
+  .tabSection {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-evenly;
+    .tab {
+      display: flex;
+      position: relative;
+      height: 100%;
+      color: grey;
+    }
+
+    .tab_active {
+      display: flex;
+      position: relative;
+      height: 100%;
+      color: #000;
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        left: 10%;
+        border-radius:4px;
+        background-color: #67A6FE;
+        height:8px;
+        width: 80%;
+      }
+    }
+
+  }
+}
